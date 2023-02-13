@@ -1,0 +1,13 @@
+.card-frame {
+  border: 1px solid black;
+  width: 15rem;
+  margin: 2rem;
+}
+
+.card-frame > img {
+  width: 15rem;
+}
+
+.card-frame a {
+  padding: 1rem;
+}
