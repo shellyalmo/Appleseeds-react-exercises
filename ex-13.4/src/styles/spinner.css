@@ -1,0 +1,81 @@
+.first {
+  border: 2px solid #7b7676;
+  border-top: 2px solid orange;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin1 2s linear infinite;
+}
+
+.second {
+  border: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid orange;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin2 1s linear infinite;
+}
+.third {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+.third::before,
+.third::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.third::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite alternate;
+  animation-delay: 0s;
+}
+.third::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes third {
+  0% {
+    background-color: orange;
+  }
+  50%,
+  100% {
+    background-color: #7b7676;
+  }
+}
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
