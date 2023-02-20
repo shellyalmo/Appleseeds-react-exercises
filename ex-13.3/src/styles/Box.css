@@ -1,0 +1,11 @@
+.Box {
+  border: 1px solid black;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid hotpink;
+}
