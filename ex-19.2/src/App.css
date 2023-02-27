@@ -1,0 +1,18 @@
+.App.light {
+  --base-color: #333;
+  --bg-color: #fff;
+}
+.App.dark {
+  --base-color: #fff;
+  --bg-color: #333;
+}
+
+.App {
+  background: var(--bg-color);
+  color: var(--base-color);
+}
+
+* {
+  background: var(--bg-color);
+  color: var(--base-color);
+}
