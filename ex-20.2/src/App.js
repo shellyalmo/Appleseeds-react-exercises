@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       todos: [
         { name: "CSS", completed: true },
@@ -12,11 +12,11 @@ class App extends Component {
         { name: "Learn Node JS", completed: false },
       ],
     };
-    this.toggleTodo = this.toggleTodo.bind(this);
+    // this.toggleTodo = this.toggleTodo.bind(this);
   }
 
   toggleTodo(index) {
-    const todos = [...this.state.todos];
+    const todos = this.state.todos;
     todos[index].completed = !todos[index].completed;
     this.setState({ todos });
   }
